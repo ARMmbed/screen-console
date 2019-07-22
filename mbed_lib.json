@@ -1,0 +1,39 @@
+{
+    "name": "screen-console",
+    "config": {
+        "width": {
+            "help": "Characters on each line.",
+            "value": 0
+        },
+        "height": {
+            "help": "Lines on screen.",
+            "value": 0
+        },
+        "font-size": {
+            "help": "Relative font size.",
+            "value": 0
+        },
+        "text-color": {
+            "help": "Text color.",
+            "value": null
+        },
+        "background-color": {
+            "help": "Background color.",
+            "value": null
+        },
+        "portrait-mode": {
+            "help": "Use portrait mode instead of landscape.",
+            "value": 0
+        }
+    },
+    "target_overrides": {
+        "DISCO_F413ZH": {
+            "screen-console.width": 48,
+            "screen-console.height": 30,
+            "screen-console.font-size": 1,
+            "screen-console.text-color": "LCD_COLOR_BLACK",
+            "screen-console.background-color": "LCD_COLOR_GREEN",
+            "screen-console.portrait-mode": 1
+        }
+    }
+}
