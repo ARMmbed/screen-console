@@ -4,13 +4,24 @@ Turn LCD screen into a debug terminal.
 
 ## Usage
 
-Use Mbed OS console override feature to replace UART output with LCD screen output. Insert in any computational unit:
+Use Mbed OS console override feature to add or replace UART output with LCD screen output. Insert in any computational unit:
 
+### Screen only
 ```
 #include "ScreenConsole.h"
 
 FileHandle *mbed::mbed_override_console(int fd) {
     static ScreenConsole screen_console;
+    return &screen_console;
+}
+```
+
+### Screen and Serial
+```
+#include "ScreenAndSerialConsole.h"
+
+FileHandle *mbed::mbed_override_console(int fd) {
+    static ScreenAndSerialConsole screen_console;
     return &screen_console;
 }
 ```
@@ -49,4 +60,4 @@ Configuration options:
 ```
 
 `text-color` and `background-color` are hardware specific.
-    
+
