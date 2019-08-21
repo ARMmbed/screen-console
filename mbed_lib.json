@@ -34,6 +34,14 @@
             "screen-console.text-color": "LCD_COLOR_BLACK",
             "screen-console.background-color": "LCD_COLOR_GREEN",
             "screen-console.portrait-mode": 1
+        },
+        "DISCO_F769NI": {
+            "screen-console.width": 47,
+            "screen-console.height": 21,
+            "screen-console.font-size": 5,
+            "screen-console.text-color": "LCD_COLOR_WHITE",
+            "screen-console.background-color": "LCD_COLOR_BLUE",
+            "screen-console.portrait-mode": 0
         }
     }
 }
